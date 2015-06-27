@@ -8,10 +8,17 @@
 #
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
+response_wel = [
+  "여긴 마피아와 타뷸라의 늑대를 즐길 수 있는 곳이야! \n들어온걸 환영해! 재밌게 즐겨보아~"
+]
+
 module.exports = (robot) ->
  robot.respond /sleep it off/i, (res) ->
    robot.brain.set 'totalSodas', 0
    res.reply 'zzzzz'
+ robot.respond /(welcome).*/i, (msg) ->
+  msg.send msg.random response_wel
+
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
