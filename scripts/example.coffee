@@ -13,7 +13,7 @@ response_wel = [
 ]
 
 module.exports = (robot) ->
- robot.respond /sleep it off/i, (res) ->
+ robot.respond /(sleep).*/i, (res) ->
    robot.brain.set 'totalSodas', 0
    res.reply ':zzz:'
  robot.respond /(welcome).*/i, (msg) ->
