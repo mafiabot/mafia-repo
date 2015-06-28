@@ -15,7 +15,7 @@ response_wel = [
 module.exports = (robot) ->
  robot.respond /sleep it off/i, (res) ->
    robot.brain.set 'totalSodas', 0
-   res.reply 'zzzzz'
+   res.reply ':zzz:'
  robot.respond /(welcome).*/i, (msg) ->
   msg.send msg.random response_wel
 
