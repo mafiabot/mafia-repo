@@ -34,7 +34,7 @@ module.exports = (robot) ->
   robot.respond /@?([\w .\-]+)\?*$/i, (res) ->
     name = res.match[1].trim()
 
-    users = robot.brain.usersForFuzzyName(name)
+    users = robot.brain.usersForName(name)
     if users.length is 1
       user = users[0]
       # Do something interesting here..
