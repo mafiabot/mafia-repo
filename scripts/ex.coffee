@@ -25,7 +25,7 @@ module.exports = (robot) ->
   point = 0
   id = {res.reply : point}
   robot.brain.set id.point, id.point+1
-  res.send robot.braion
+  res.send robot.brain
 
  # robot.topic (res) ->
   # robot.hear /badger/i, (res) ->
