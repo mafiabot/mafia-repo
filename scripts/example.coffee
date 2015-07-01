@@ -18,7 +18,6 @@ module.exports = (robot) ->
    res.reply ':zzz:'
  robot.respond /(welcome).*/i, (msg) ->
   msg.send msg.random response_wel
-
  robot.respond /(사기꾼).*/i, (res) ->
   res.send "사기꾼의 대명사를 찾으시나요? 그럼 이분! @haegyung"
 
