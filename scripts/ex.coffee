@@ -23,9 +23,9 @@ module.exports = (robot) ->
  robot.hear /(@).*/i, (res) ->
   res.reply "와 #{res.message.text} (이)가 친분도 상승!"
   point = 0
-  id = {res.reply : point}
-  robot.brain.set id.point, id.point+1
-  res.send robot.brain
+#  id = {res.reply : point}
+#  robot.brain.set id.point, id.point+1
+#  res.send robot.brain
 
  # robot.topic (res) ->
   # robot.hear /badger/i, (res) ->
