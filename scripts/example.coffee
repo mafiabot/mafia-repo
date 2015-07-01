@@ -20,8 +20,8 @@ module.exports = (robot) ->
   msg.send msg.random response_wel
  robot.respond /(사기꾼).*/i, (res) ->
   res.send "사기꾼의 대명사를 찾으시나요? 그럼 이분! @haegyung"
- namedboy.respond /(helo).*/i, (res) ->
-  res.send "냐옹"
+ robot.hear /(@).*/i, (res) ->
+  res.reply "친분도 상승!"
 
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
