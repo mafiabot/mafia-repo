@@ -21,6 +21,10 @@ module.exports = (robot) ->
  robot.respond /(사기꾼).*/i, (res) ->
   res.send "사기꾼의 대명사를 찾으시나요? 그럼 이분! @haegyung"
 
+module.exports = (namedboy) ->
+ namedboy.respond /(helo).*/i, (res) ->
+  res.send "냐옹"
+
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
