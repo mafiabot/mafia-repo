@@ -12,18 +12,18 @@ response_wel = [
   "여긴 마피아와 타뷸라의 늑대를 즐길 수 있는 곳이야! \n들어온걸 환영해! 재밌게 즐겨보아~"
 ]
 
-module.exports = (robot) ->
- robot.respond /(sleep).*/i, (res) ->
-   robot.brain.set 'totalSodas', 0
-   res.reply ':zzz:'
- robot.respond /(welcome).*/i, (msg) ->
-  msg.send msg.random response_wel
- robot.respond /(사기꾼).*/i, (res) ->
-  res.send "사기꾼의 대명사를 찾으시나요? 그럼 이분! @haegyung"
- robot.hear /(@).*/i, (res) ->
-  res.reply "친분도 상승!"
- robot.topic (res) ->
-  res.send "#{res.message.text}? That's a Paddlin'"
+# module.exports = (robot) ->
+#  robot.respond /(sleep).*/i, (res) ->
+#   robot.brain.set 'totalSodas', 0
+#   res.reply ':zzz:'
+# robot.respond /(welcome).*/i, (msg) ->
+#  msg.send msg.random response_wel
+# robot.respond /(사기꾼).*/i, (res) ->
+#  res.send "사기꾼의 대명사를 찾으시나요? 그럼 이분! @haegyung"
+# robot.hear /(@).*/i, (res) ->
+#  res.reply "친분도 상승!"
+# robot.topic (res) ->
+#  res.send "#{res.message.text}? That's a Paddlin'"
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
