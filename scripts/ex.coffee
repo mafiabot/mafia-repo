@@ -22,8 +22,9 @@ module.exports = (robot) ->
   res.send "사기꾼의 대명사를 찾으시나요? 그럼 이분! @haegyung"
  robot.hear /(@).*/i, (res) ->
   res.reply "와 #{res.message.text} (이)가 친분도 상승!"
+  user = "#{res.message.text}"
   point = 0
-  id = {" #{res.message.text}" : point}
+  id = {user : point}
 #  robot.brain.set id.point, id.point+1
 #  res.send robot.brain
 
