@@ -19,6 +19,9 @@ module.exports = (robot) ->
  robot.respond /(welcome).*/i, (msg) ->
   msg.send msg.random response_wel
 
+ robot.respond /(sagiggun).*/i, (res) ->
+  res.send "사기꾼의 대명사를 찾으시나요? 그럼 이분! @haegyung"
+
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
