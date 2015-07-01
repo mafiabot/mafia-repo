@@ -93,7 +93,7 @@ response_wel = [
   #  data   = JSON.parse req.body.payload
   #  secret = data.secret
   
-  robot.messageRoom room, "I have a secret: #{secret}"
+  # robot.messageRoom room, "I have a secret: #{secret}"
   
   #  res.send 'OK'
   # 
