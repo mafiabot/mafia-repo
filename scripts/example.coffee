@@ -22,6 +22,8 @@ module.exports = (robot) ->
   res.send "사기꾼의 대명사를 찾으시나요? 그럼 이분! @haegyung"
  robot.hear /(@).*/i, (res) ->
   res.reply "친분도 상승!"
+ robot.topic (res) ->
+  res.send "#{res.message.text}? That's a Paddlin'"
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
