@@ -24,7 +24,7 @@ module.exports = (robot) ->
   res.reply "와 #{res.message.text} (이)가 친분도 상승!"
   point = 0
   id = {res.reply : point}
-  robot.brain.set id.point , id.point + 1
+  robot.brain.set id.point, id.point+1
   res.send robot.braion
 
  # robot.topic (res) ->
