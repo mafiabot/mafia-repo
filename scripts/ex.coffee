@@ -26,7 +26,7 @@ module.exports = (robot) ->
   point = 0
   id = {user : point}
  robot.hear /(\*두둠칫얍\*).*/i, (res) ->
-  res.send 두둠칫 
+  res.send "두둠칫 "
   res.send " ⊂_ヽ "
   res.send "　 ＼＼ Λ＿Λ  "
   res.send "　　 ＼( ‘ㅅ' ) 두둠칫 "
