@@ -16,7 +16,7 @@ module.exports = (robot) ->
  robot.respond /(sleep).*/i, (res) ->
    robot.brain.set 'totalSodas', 0
    res.reply ':zzz:'
- robot.respond /(welcome).*/i, (msg) ->
+ robot.hear /(welcome).*/i, (msg) ->
   msg.send msg.random response_wel
  robot.hear /(사기꾼).*/i, (res) ->
   res.send "사기꾼의 대명사를 찾으시나요? 그럼 이분! @haegyung"
@@ -25,6 +25,8 @@ module.exports = (robot) ->
   user = "#{res.message.text}"
   point = 0
   id = {user : point}
+ robot.hear /(\*두둠칫\*).*/i, (res) ->
+  res.reply  "¯\_ ( ‘ㅅ' )_/¯" 
 #  res.send "end!"
 #  robot.brain.set id.point, id.point+1
 #  res.send robot.brain
