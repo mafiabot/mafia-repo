@@ -42,6 +42,8 @@ module.exports = (robot) ->
   res.send "　| |　　) / "
   res.send "`ノ )　　Lﾉ "
   res.send " "
+ robot.hear /(\*지빠짜묘라요요\*).*/i, (res) ->
+  res.send "https://weirdmeetup.slack.com/archives/_general/p1435850870017346" 
  robot.hear /(\*두둠칫\*).*/i, (res) ->
   res.send  " ¯\_ ( ‘ㅅ' )_/¯ " 
 #  res.send "end!"
