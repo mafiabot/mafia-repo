@@ -31,7 +31,7 @@ module.exports = (robot) ->
 
 module.exports = (robot) ->
 
-  robot.respond /@?([\w .\-]+)\?*$/i, (res) ->
+  robot.respond /(@).*/i, (res) ->
     name = res.match[1].trim()
 
     users = robot.brain.usersForFuzzyName(name)
