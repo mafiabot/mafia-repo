@@ -28,17 +28,12 @@ module.exports = (robot) ->
   res.send "end!"
 #  robot.brain.set id.point, id.point+1
 #  res.send robot.brain
-
-module.exports = (robot) ->
-
   robot.respond /(@).*/i, (res) ->
     name = res.match[1].trim()
-
     users = robot.brain.usersForFuzzyName(name)
     if users.length is 1
       user = users[0]
       # Do something interesting here..
-
       res.send "#{name} is user - #{user}"
 
  # robot.topic (res) ->
