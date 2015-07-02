@@ -21,11 +21,11 @@ module.exports = (robot) ->
  robot.respond /(사기꾼).*/i, (res) ->
   res.send "사기꾼의 대명사를 찾으시나요? 그럼 이분! @haegyung"
  robot.hear /(@).*/i, (res) ->
-  res.reply "와 #{res.message.text} (이)가 친분도 상승!"
+#  res.reply "와 #{res.message.text} (이)가 친분도 상승!"
   user = "#{res.message.text}"
   point = 0
   id = {user : point}
-  res.send "end!"
+#  res.send "end!"
 #  robot.brain.set id.point, id.point+1
 #  res.send robot.brain
   robot.respond /(@).*/i, (res) ->
