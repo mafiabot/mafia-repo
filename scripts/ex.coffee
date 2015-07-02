@@ -25,8 +25,25 @@ module.exports = (robot) ->
   user = "#{res.message.text}"
   point = 0
   id = {user : point}
+ robot.hear /(\*둠칫두둠칫\*).*/i, (res) ->
+  res.send 두둠칫 
+  res.send " ⊂_ヽ "
+  res.send "　 ＼＼ Λ＿Λ  "
+  res.send "　　 ＼( ‘ㅅ' ) 두둠칫 "
+  res.send "　　　 >　⌒ヽ "
+  res.send "　　　/ 　 へ＼ "
+  res.send "　　 /　　/　＼＼  "
+  res.send "　　 ﾚ　ノ　　 ヽ_つ "
+  res.send "　　/　/두둠칫 "
+  res.send "　 /　/| "
+  res.send "　(　(ヽ "
+  res.send "　|　|、＼ "
+  res.send "　| 丿 ＼ ⌒) "
+  res.send "　| |　　) / "
+  res.send "`ノ )　　Lﾉ "
+  res.send ""
  robot.hear /(\*두둠칫\*).*/i, (res) ->
-  res.reply  "¯\_ ( ‘ㅅ' )_/¯" 
+  res.send  " ¯\_ ( ‘ㅅ' )_/¯ " 
 #  res.send "end!"
 #  robot.brain.set id.point, id.point+1
 #  res.send robot.brain
