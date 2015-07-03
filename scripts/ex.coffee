@@ -48,6 +48,8 @@ module.exports = (robot) ->
   res.send "마피아의 요정 @nipol 찾으셨나요?"
  robot.hear /(\*두둠칫\*).*/i, (res) ->
   res.send  " ¯\_ ( ‘ㅅ' )_/¯ " 
+ robot.hear  /(\*오예\*).*/i, (res) ->
+  res.send "＼\ ٩( ᐛ )و /／  오예!"
 #  res.send "end!"
 #  robot.brain.set id.point, id.point+1
 #  res.send robot.brain
