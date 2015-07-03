@@ -44,6 +44,8 @@ module.exports = (robot) ->
   res.send " "
  robot.hear /(\*지빠짜묘라요요\*).*/i, (res) ->
   res.send "@nipol : 진짜 맛있었어요. :soju: (박제본 https://goo.gl/PMcBrJ)" 
+ robot.hear /(\*마피아\*).*/i, (res) ->
+  res.send "마피아의 요정 @nipol 찾으셨나요?"
  robot.hear /(\*두둠칫\*).*/i, (res) ->
   res.send  " ¯\_ ( ‘ㅅ' )_/¯ " 
 #  res.send "end!"
